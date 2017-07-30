@@ -1,0 +1,157 @@
+body {
+    font-family: "Lato", sans-serif;
+    /*color: #747704;*/
+    font-size: 16px;
+    padding: 2%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    width: 100%;
+    height: inherit;
+}
+
+hr {
+    border: none;
+    height: 4px;
+    /* Set the hr color */
+    color: #bcbbbb;
+    /* old IE */
+    background-color: #bcbbbb;
+    /* Modern Browsers */
+    margin-top: 0;
+}
+
+a {
+    color: #bcbbbb;
+}
+
+h1,
+h2,
+h4 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    margin-top: 3px;
+    font-size: 100%;
+    font-weight: 300;
+}
+
+h3 {
+    color: #bcbbbb;
+}
+
+header {
+    display: flex;
+    height: 5em;
+    /* max-height: 700px; */
+    min-height: 100px;
+    /*background-color: rgba(253, 196, 122, 0.84);*/
+}
+
+header div {
+    padding: 0;
+    margin: 0;
+}
+
+.myLogo {
+    width: 19%;
+}
+
+.name_title {
+    width: 80%;
+    text-align: right;
+}
+
+.main-img {
+    display: none;
+    background-image: url(../img/programer.jpg);
+    background-size: cover;
+    background-position: right bottom;
+    /*filter: grayscale(100%);*/
+    opacity: 0.5;
+    height: 35vw;
+    margin: auto;
+}
+
+.myWork {
+    color: #747704;
+    text-align: center;
+}
+
+.movies-sperator {
+    margin: 5px;
+    height: 2px;
+}
+
+.projects * {
+    width: 100%
+}
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 3em;
+    }
+    .myLogo {
+        width: 14%;
+    }
+    .name_title {
+        width: 85%;
+        text-align: right;
+    }
+    .main-img {
+        display: block;
+    }
+    .movies-sperator {
+        display: none;
+    }
+    .projects {
+        display: inline-block;
+        width: 45%;
+        margin: 0 2% 2%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 4em;
+    }
+    hr {
+        margin: 20px 0;
+    }
+    .myWork {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        margin: auto;
+    }
+    .projects img {
+        order: -1;
+    }
+    .projects h2 {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        width: 1200px;
+        margin: auto;
+    }
+}
